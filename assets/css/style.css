@@ -1,7 +1,93 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: orange;
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: block;
+  min-width: 118px;
+  line-height: 50px;
+  border-radius: 24.5px;
+  background: #171100;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: -20px;
+  background: #fffcf4;
+  padding: 36px 0 8px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav {
+  margin-left: auto;
+}
+
+.header .nav ul {
+  display: flex;
+}
+
+.header .nav a {
+  padding: 8px 21px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #5f5b53;
+}
+
+.nav li:hover a,
+.nav li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.nav li.active {
+  position: relative;
+}
+
+.nav li.active::after {
+  display: block;
+  content: "";
+  bottom: -6px;
+  left: 21px;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
 }
